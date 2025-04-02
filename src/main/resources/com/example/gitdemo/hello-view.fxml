@@ -14,9 +14,7 @@
 
     <Label fx:id="welcomeText" />
     <ImageView fitHeight="113.0" fitWidth="215.0" pickOnBounds="true" preserveRatio="true">
-        <image>
-            <Image url="@Facebook-Logo.png" />
-        </image></ImageView>
+    </ImageView>
     <PasswordField prefHeight="26.0" prefWidth="227.0" promptText="number or usernumber">
         <font>
             <Font name="System Bold" size="15.0" />
