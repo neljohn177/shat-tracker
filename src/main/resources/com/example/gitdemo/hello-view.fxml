@@ -2,16 +2,39 @@
 
 <?import javafx.geometry.*?>
 <?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
 <?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
 
-<VBox alignment="CENTER" spacing="20.0" style="-fx-background-color: magenta;" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/17.0.12" fx:controller="com.example.gitdemo.HelloController">
+<VBox alignment="CENTER" prefHeight="468.0" prefWidth="289.0" spacing="20.0" style="-fx-background-color: #3b5998;" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo4.HelloController">
     <padding>
-        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+        <Insets bottom="20.0" left="20.0" right="20.0" top="50.0" />
     </padding>
-   <Label text="Pandan G" textFill="WHITE" />
-   <TextField />
-   <PasswordField />
+    <FlowPane prefHeight="200.0" prefWidth="200.0" />
 
     <Label fx:id="welcomeText" />
-    <Button onAction="#onHelloButtonClick" text="Hello!" />
+    <ImageView fitHeight="113.0" fitWidth="215.0" pickOnBounds="true" preserveRatio="true">
+        <image>
+            <Image url="@Facebook-Logo.png" />
+        </image></ImageView>
+    <PasswordField prefHeight="26.0" prefWidth="227.0" promptText="number or usernumber">
+        <font>
+            <Font name="System Bold" size="15.0" />
+        </font></PasswordField>
+    <PasswordField promptText="password">
+        <font>
+            <Font name="System Bold" size="17.0" />
+        </font></PasswordField>
+    <PasswordField maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" promptText="               log in " style="-fx-background-color: blue;">
+        <font>
+            <Font size="21.0" />
+        </font>
+        <VBox.margin>
+            <Insets bottom="50.0" top="50.0" />
+        </VBox.margin>
+        <padding>
+            <Insets right="20.0" />
+        </padding>
+    </PasswordField>
+    <Button onAction="#onHelloButtonClick" text="forgot password" />
 </VBox>
